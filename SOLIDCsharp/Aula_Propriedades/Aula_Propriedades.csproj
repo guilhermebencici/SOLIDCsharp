@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D63104D8-2739-49D6-8C40-B1D3462DF498}</ProjectGuid>
+    <ProjectGuid>{C2EB15E7-4374-4127-B4F7-DC57598EFF9E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Assembly2</RootNamespace>
-    <AssemblyName>Assembly2</AssemblyName>
+    <RootNamespace>Aula_Propriedades</RootNamespace>
+    <AssemblyName>Aula_Propriedades</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classe3.cs" />
+    <Compile Include="Pessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

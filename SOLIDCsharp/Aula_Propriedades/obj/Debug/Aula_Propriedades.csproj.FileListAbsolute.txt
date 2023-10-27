@@ -1,0 +1,8 @@
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\Aula_Propriedades\bin\Debug\Aula_Propriedades.exe.config
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\Aula_Propriedades\bin\Debug\Aula_Propriedades.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\Aula_Propriedades\bin\Debug\Aula_Propriedades.pdb
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\Aula_Propriedades\obj\Debug\Aula_Propriedades.csproj.AssemblyReference.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\Aula_Propriedades\obj\Debug\Aula_Propriedades.csproj.SuggestedBindingRedirects.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\Aula_Propriedades\obj\Debug\Aula_Propriedades.csproj.CoreCompileInputs.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\Aula_Propriedades\obj\Debug\Aula_Propriedades.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\Aula_Propriedades\obj\Debug\Aula_Propriedades.pdb
