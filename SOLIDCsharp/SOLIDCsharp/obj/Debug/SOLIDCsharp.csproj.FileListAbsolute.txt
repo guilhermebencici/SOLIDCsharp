@@ -1,0 +1,8 @@
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\SOLIDCsharp\bin\Debug\SOLIDCsharp.exe.config
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\SOLIDCsharp\bin\Debug\SOLIDCsharp.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\SOLIDCsharp\bin\Debug\SOLIDCsharp.pdb
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\SOLIDCsharp\obj\Debug\SOLIDCsharp.csproj.AssemblyReference.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\SOLIDCsharp\obj\Debug\SOLIDCsharp.csproj.SuggestedBindingRedirects.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\SOLIDCsharp\obj\Debug\SOLIDCsharp.csproj.CoreCompileInputs.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\SOLIDCsharp\obj\Debug\SOLIDCsharp.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\SOLIDCsharp\obj\Debug\SOLIDCsharp.pdb
