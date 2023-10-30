@@ -1,0 +1,8 @@
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModeloAnemico\bin\Debug\ModeloAnemico.exe.config
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModeloAnemico\bin\Debug\ModeloAnemico.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModeloAnemico\bin\Debug\ModeloAnemico.pdb
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModeloAnemico\obj\Debug\ModeloAnemico.csproj.AssemblyReference.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModeloAnemico\obj\Debug\ModeloAnemico.csproj.SuggestedBindingRedirects.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModeloAnemico\obj\Debug\ModeloAnemico.csproj.CoreCompileInputs.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModeloAnemico\obj\Debug\ModeloAnemico.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModeloAnemico\obj\Debug\ModeloAnemico.pdb
