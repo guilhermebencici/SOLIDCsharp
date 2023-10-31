@@ -1,0 +1,8 @@
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\UpCastingDownCastingHeranca\bin\Debug\UpCastingDownCastingHeranca.exe.config
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\UpCastingDownCastingHeranca\bin\Debug\UpCastingDownCastingHeranca.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\UpCastingDownCastingHeranca\bin\Debug\UpCastingDownCastingHeranca.pdb
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\UpCastingDownCastingHeranca\obj\Debug\UpCastingDownCastingHeranca.csproj.AssemblyReference.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\UpCastingDownCastingHeranca\obj\Debug\UpCastingDownCastingHeranca.csproj.SuggestedBindingRedirects.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\UpCastingDownCastingHeranca\obj\Debug\UpCastingDownCastingHeranca.csproj.CoreCompileInputs.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\UpCastingDownCastingHeranca\obj\Debug\UpCastingDownCastingHeranca.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\UpCastingDownCastingHeranca\obj\Debug\UpCastingDownCastingHeranca.pdb
