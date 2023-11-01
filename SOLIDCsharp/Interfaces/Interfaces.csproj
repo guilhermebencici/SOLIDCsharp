@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{235020B9-855A-4DFC-A783-6F0C6920FC6E}</ProjectGuid>
+    <ProjectGuid>{87999723-5123-49F7-9103-41E9CD0B5707}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ComposicaoUML</RootNamespace>
-    <AssemblyName>ComposicaoUML</AssemblyName>
+    <RootNamespace>Interfaces</RootNamespace>
+    <AssemblyName>Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,14 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Departamento.cs" />
-    <Compile Include="Escola.cs" />
+    <Compile Include="ArquivoBase.cs" />
+    <Compile Include="Demo.cs" />
+    <Compile Include="GravarXml.cs" />
+    <Compile Include="IControle.cs" />
+    <Compile Include="IGravar.cs" />
+    <Compile Include="ITeste.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

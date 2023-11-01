@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{235020B9-855A-4DFC-A783-6F0C6920FC6E}</ProjectGuid>
+    <ProjectGuid>{AAEC838D-99BF-4FA4-862B-B916C77813B8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ComposicaoUML</RootNamespace>
-    <AssemblyName>ComposicaoUML</AssemblyName>
+    <RootNamespace>ModificadorSealed</RootNamespace>
+    <AssemblyName>ModificadorSealed</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,14 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Departamento.cs" />
-    <Compile Include="Escola.cs" />
+    <Compile Include="CalculaSoma.cs" />
+    <Compile Include="CalculaSomaBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

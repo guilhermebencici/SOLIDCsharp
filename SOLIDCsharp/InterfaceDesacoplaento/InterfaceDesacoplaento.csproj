@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{235020B9-855A-4DFC-A783-6F0C6920FC6E}</ProjectGuid>
+    <ProjectGuid>{98FDDE90-203C-433C-9547-7DEAD214D722}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ComposicaoUML</RootNamespace>
-    <AssemblyName>ComposicaoUML</AssemblyName>
+    <RootNamespace>InterfaceDesacoplaento</RootNamespace>
+    <AssemblyName>InterfaceDesacoplaento</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,14 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Departamento.cs" />
-    <Compile Include="Escola.cs" />
+    <Compile Include="IRegistro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistarNoArquivo.cs" />
+    <Compile Include="RegistarNoConsole.cs" />
+    <Compile Include="RegistroOcorrencia.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

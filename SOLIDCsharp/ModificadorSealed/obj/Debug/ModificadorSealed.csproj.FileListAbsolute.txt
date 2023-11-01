@@ -1,0 +1,8 @@
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModificadorSealed\bin\Debug\ModificadorSealed.exe.config
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModificadorSealed\bin\Debug\ModificadorSealed.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModificadorSealed\bin\Debug\ModificadorSealed.pdb
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModificadorSealed\obj\Debug\ModificadorSealed.csproj.AssemblyReference.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModificadorSealed\obj\Debug\ModificadorSealed.csproj.SuggestedBindingRedirects.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModificadorSealed\obj\Debug\ModificadorSealed.csproj.CoreCompileInputs.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModificadorSealed\obj\Debug\ModificadorSealed.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\ModificadorSealed\obj\Debug\ModificadorSealed.pdb

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{235020B9-855A-4DFC-A783-6F0C6920FC6E}</ProjectGuid>
+    <ProjectGuid>{ED3FB0BB-1DBC-413B-AFE0-26BC46FFE7FA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ComposicaoUML</RootNamespace>
-    <AssemblyName>ComposicaoUML</AssemblyName>
+    <RootNamespace>ClassesAbstratas_Interfaces</RootNamespace>
+    <AssemblyName>ClassesAbstratas_Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,14 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Departamento.cs" />
-    <Compile Include="Escola.cs" />
+    <Compile Include="Figura.cs" />
+    <Compile Include="IFigura.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quadrado.cs" />
+    <Compile Include="Triangulo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
