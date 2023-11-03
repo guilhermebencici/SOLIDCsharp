@@ -1,0 +1,8 @@
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\PolimorfismoSobrecarga\bin\Debug\PolimorfismoSobrecarga.exe.config
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\PolimorfismoSobrecarga\bin\Debug\PolimorfismoSobrecarga.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\PolimorfismoSobrecarga\bin\Debug\PolimorfismoSobrecarga.pdb
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\PolimorfismoSobrecarga\obj\Debug\PolimorfismoSobrecarga.csproj.AssemblyReference.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\PolimorfismoSobrecarga\obj\Debug\PolimorfismoSobrecarga.csproj.SuggestedBindingRedirects.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\PolimorfismoSobrecarga\obj\Debug\PolimorfismoSobrecarga.csproj.CoreCompileInputs.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\PolimorfismoSobrecarga\obj\Debug\PolimorfismoSobrecarga.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\PolimorfismoSobrecarga\obj\Debug\PolimorfismoSobrecarga.pdb
