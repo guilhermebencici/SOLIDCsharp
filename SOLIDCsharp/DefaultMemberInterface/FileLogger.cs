@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DefaultMemberInterface
 {
-    internal class FileLogger
+    internal class FileLogger : ILogger
     {
+        public void Info(string message)
+        {
+            
+        }
     }
 }
