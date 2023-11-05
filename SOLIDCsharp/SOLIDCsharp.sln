@@ -61,6 +61,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRP_Aderente", "SRP_Aderent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCP_ExtensionMethods", "OCP_ExtensionMethods\OCP_ExtensionMethods.csproj", "{E8536FDA-6FF9-470A-88CE-9948154F8422}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCP_Violacao", "OCP_Violacao\OCP_Violacao.csproj", "{0B105227-B81F-4060-BAD2-73AC22FF7DDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISP_Exemplo", "ISP_Exemplo\ISP_Exemplo.csproj", "{7FF6BEDF-A7AF-4A42-B529-F41EF36D146C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +187,14 @@ Global
 		{E8536FDA-6FF9-470A-88CE-9948154F8422}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8536FDA-6FF9-470A-88CE-9948154F8422}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8536FDA-6FF9-470A-88CE-9948154F8422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B105227-B81F-4060-BAD2-73AC22FF7DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B105227-B81F-4060-BAD2-73AC22FF7DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B105227-B81F-4060-BAD2-73AC22FF7DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B105227-B81F-4060-BAD2-73AC22FF7DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FF6BEDF-A7AF-4A42-B529-F41EF36D146C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FF6BEDF-A7AF-4A42-B529-F41EF36D146C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FF6BEDF-A7AF-4A42-B529-F41EF36D146C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FF6BEDF-A7AF-4A42-B529-F41EF36D146C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

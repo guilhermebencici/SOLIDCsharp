@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastrarCliente.cs" />
+    <Compile Include="CadastrarProduto.cs" />
+    <Compile Include="IMensagemEmail.cs" />
+    <Compile Include="IPersistencia.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
