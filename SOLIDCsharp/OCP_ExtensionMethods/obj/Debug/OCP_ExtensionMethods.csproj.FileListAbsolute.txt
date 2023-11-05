@@ -1,0 +1,8 @@
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\OCP_ExtensionMethods\bin\Debug\OCP_ExtensionMethods.exe.config
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\OCP_ExtensionMethods\bin\Debug\OCP_ExtensionMethods.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\OCP_ExtensionMethods\bin\Debug\OCP_ExtensionMethods.pdb
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\OCP_ExtensionMethods\obj\Debug\OCP_ExtensionMethods.csproj.AssemblyReference.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\OCP_ExtensionMethods\obj\Debug\OCP_ExtensionMethods.csproj.SuggestedBindingRedirects.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\OCP_ExtensionMethods\obj\Debug\OCP_ExtensionMethods.csproj.CoreCompileInputs.cache
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\OCP_ExtensionMethods\obj\Debug\OCP_ExtensionMethods.exe
+C:\Users\guilherme.a.souza\Desktop\Anima_UDEMY\SOLIDCsharp\SOLIDCsharp\OCP_ExtensionMethods\obj\Debug\OCP_ExtensionMethods.pdb

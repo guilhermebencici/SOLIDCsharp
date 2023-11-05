@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0867264E-1042-460A-8980-43D97FF61205}</ProjectGuid>
+    <ProjectGuid>{0B105227-B81F-4060-BAD2-73AC22FF7DDF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DefaultMemberInterface</RootNamespace>
-    <AssemblyName>DefaultMemberInterface</AssemblyName>
+    <RootNamespace>OCP_Violacao</RootNamespace>
+    <AssemblyName>OCP_Violacao</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleLogger.cs" />
-    <Compile Include="FileLogger.cs" />
-    <Compile Include="ILogger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
