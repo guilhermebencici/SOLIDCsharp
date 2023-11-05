@@ -1,0 +1,8 @@
+=================================== EXERCICIO 1 ========================================
+
+==> O principio violado foi o S.R.P ( Single Responsability Principle), pois foi acrescentado dentro da Classe LocalizaCliente o método
+	ExportaCSV(clientes).
+	
+	** SOLUÇÃO ***
+	
+		-> Criar uma classe, a qual se tornará responsável para exportar dados.
