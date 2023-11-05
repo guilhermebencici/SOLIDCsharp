@@ -1,0 +1,681 @@
+															==== SOBRE CLASSE =====
+
+==> Classe é um modelo para criar Objetos e contém atributos e comportamentos que definem os objetos.
+	Ou seja, um objeto não existe sem sua classe.
+	
+	Uma classe, possui seus "Membros da classe"
+		-> Fields
+		-> Properties
+		-> Constructor
+		-> Methods
+		
+															==> CLASSES: ABSTRATAS <==
+															
+==> A Classe Abstrata, é um tipo especial de classe, pois ela não pode ser instanciada, ou seja, não pode ter um objeto criado.
+	É definida usando o modificador "ABSTRACT" e pode conter métodos comuns e métodos abstratos, que também são definidos pelo modificador "ABSTRACT".
+	
+	-> Um método abstrato é um método que não possui implementação na classe abstrata.
+	-> Um método abstrato possui somente a definição de sua assinatura.
+	-> A sua implementação deve ser feita na classe derivada.
+		
+================================================================= // =============================================================================
+
+
+															==== SOBRE OBJETO =====
+
+==> Objeto é uma instância de uma classe, criado em tempo de execução, usando a palavra "new".
+
+	Após criar uma classe, para instancia-la, criando o objeto
+		Ex: Classe Pessoa
+		Pessoa pessoa1 = new Pessoa();
+
+================================================================= // =============================================================================
+
+															==== SOBRE CONSTRUTOR =====
+
+==> Construtor, é um método especial usado para inicializar objetos.
+	É chamado quando um objeto de uma classe é criado.
+	Pode ser usado para definir valores iniciais para os atributos de um objeto.
+	Podemos ter sobrecarga de construtores, que é quando possuimos construtores (mesmo nome), mas com quantidade de parametros diferentes na assinatura.
+
+	Ex: (COM SOBRECARGA)
+	
+		// CONSTRUTOR VAZIO (PADRAO)
+		Pessoa() {}
+		
+		// CONSTRUTOR COM PARAMETROS
+		Pessoa() {string nome, int idade, string cpf} 
+		Pessoa () {string nome, string email, int senha}
+		
+================================================================= // =============================================================================
+
+															==== SOBRE PALAVRA THIS =====
+
+==> Refere-se a instância atual da classe. 
+	É usada como um modificador do primeiro parâmetro de método de extensão!
+	
+	** Principais usos:
+	
+		*  Qualificar membros ocultados por nomes semalhantes (evitando ambiguidade)
+			Ex:
+				Na classe Pessoa
+				{	//propriedades
+					public string Nome;
+					public string Email;
+					
+					// construtor
+					public Pessoa(string Nome, string Email)
+					{
+						this.Nome = Nome;
+						this.Email = Email;
+					}
+				}
+			
+			Ou seja, o "this.Email", refere-se ao atributo da classe Pessoa, o qual vai recebe-lo, atráves da váriavel "Nome" 
+			ficando this.Nome = Nome;
+			
+															==== SOBRE MODIFICADORES DE ACESSO =====
+
+==> É usada para definir o níel de acesso/visibilidade para: Classes, Campos, Métodos  e Propriedades.
+
+	Modificadores:
+		public -> Não existe restrição de acesso/visibilidade
+		private -> Acesso limitado a membros da mesma classe.
+		protected -> Acesso limitado a membros da mesma classe e das classes herdeiras.
+		internal -> Acesso limitado  a classes definidas dentro do assembly do projeto atual.
+		protected internal -> Acesso limitado ao assembly atual e aos tipos derivados da classe que o contém.
+		private protected -> Acesso limitado a classe que o contém ou a tipos derivados da classe que o contém no assembly
+
+================================================================= // =============================================================================
+
+
+															==== SOBRE MODIFICADORES DE ACESSO =====
+
+==> É o processo de ocultar ou esconder os membros de uma classe.
+	Como?
+		Declarando membros(campos/váriaveis) como private
+		Fornecendo métodos públicos get e set, por meio de propriedades, acessando e atualizando o valor de um campo privado.
+		
+	EX:
+		// Sem nenhuma restrição!
+		public class Pessoa
+		{
+			public string nome;
+		}
+		
+		// Acesso limitado a membros da mesma classe.
+		public class Pessoa
+		{
+			// CAMPO!
+			private string nome;
+			
+			// PROPRIEDADE
+			public string Nome
+			{
+				get {return nome;}
+				set {nome = value}
+			}
+		}
+		
+		OBS:  A propriedade Nome está associada ao campo de nome.
+			  O método get retorna o valor do campo nome.
+			  O método set atribui um valor do campo nome.
+			  Value, representa o valor que atribuímos a propriedade.
+			  
+		  Ou seja, uma propriedade é como uma combinação de uma váriavel um método, possuindo dois métodos (get e set)!
+		  
+	==> MODIFICADORES: SEALED <==
+	
+==> Uma classe SELADA, utiliza o modificador SEALED e impede que outras classes herdem desta.
+	
+	-> São usadas para restringir o recurso de herança
+	-> Elas podem ser consideradas o oposto das Classes Abstratas
+	-> Podem ser instanciadas e usadas normalmente
+	
+==> Pode ser utilizado em m método ou propriedade que substitui(override) um método ou propriedade virtual em uma classe base. Isso permite que classes sejam derivadas
+de sua classe e impede que elas substituam métodos ou propriedades virtuais.
+
+	-> Um método selado, não pode ser substituído (override)
+	-> Para declarar um método como selado ele tem que ser declarado virtual na sua classe base
+	-> Quando aplicado o modificador sealed sempre deve ser usado como Override
+	
+		  
+================================================================= // =============================================================================
+
+
+														==== SOBRE ENCAPSULAMENTO E MODELO DE DOMÍNIO =====
+	
+==> Encapsular, é ocultar os detalhes da implementação de um objeto de forma manter o seu estadoconsistente.
+
+==> O modelo de domínio é uma representação de classes conceituais a partir do mundo real.
+	-> Modelar o domínio, é entender a descrição do problema do projeto, converter os requisitos em componentes de software de uma solução.
+	
+	=> MODELO DE DOMÍNIO ANÊMICO (não possui lógica, apenas as propriedades)
+		public class Cliente
+		{
+			public int Id {get; set;}
+			public string Nome {get; set;}
+			public string Endereco {get; set;}
+			
+		{
+
+	=> MODELO DE DOMÍNIO RICO (não possui lógica, apenas as propriedades)
+		public class Cliente
+		{
+			public int Id {get; private set;}
+			public string Nome {get; private set;}
+			public string Endereco {get; private set;}
+			
+			// PROPRIEDADE
+			public Cliente(int id, string nome, string endereco)
+			{
+				if (id < 0)
+					throw new invalidOperationException();
+					
+				Id = id;
+				Nome = nome;
+				Endereco = endereco;
+			}
+		{
+
+================================================================= // =============================================================================
+
+															==== SOBRE MÉTODOS =====
+
+==> Método é um bloco de código que contém uma série de instruções.
+	Um programa faz com que as instruções sejam executadas chamandoo métodoe especificando os argumentos de métodos necessários.
+	
+	Hierarquia: Namespace -> Classe -> Método
+	
+	-> ASSINATURA DE UM MÉTODO (Nível de acesso, Nome do método, Número e Tipo de Parâmetros:
+	
+	class Teste
+	{
+		// MÉTODO 										// ASSINATURA
+		public int Somar(int numero1, int numero2) 	   // Nível: public | Nome: Somar | Número de parâmetros: 2 | Tipo: int int
+		{
+			return numero1 + numero2; 
+		}
+	}
+	
+	==> SOBRECARGA DE MÉTODOS (OVERLOADING): Métodos com o mesmo nome mas assinatura diferente<==
+	
+	** IPORTANTE, (int numero1, int numero2) dentro do método, chamamos de parametros já quando chamamos o método, o nome é ARGUMENTOS
+	
+	class Teste
+	{
+		//MÉTODO PUBLIC, COM 2 PARAMETROS (INT INT)
+		public int Somar(int numero1, int numero2)
+		{
+			return numero1 + numero2; 
+		}
+		
+		//MÉTODO PUBLIC, COM 3 PARAMETROS (DOUBLE, INT, INT)
+		public int Somar(double numero1, int numero2, int numero3)
+		{
+			return numero1 + numero2 + numero3; 
+		}
+	}
+	
+	
+	==> MÉTODOS: PARÂMETROS OPCIONAIS <==
+	Podem ser chamados sem a obrigação de passar argumentos para esses parâmetros. 
+	
+	Regras para poder utilizar:
+		1) Devem ser definidos após os parâmetros normais
+		2) Devem possuir um valor padrão contante
+		
+	Ex: int x = parâmetro normal! Y, Z e W => Parâmetros opcionais (se eu não chamar nenhum argumento, esses (opcionais) serão chamados)
+	
+		public int Somar(int x, int y = 20, int z = 30, int w = 50)
+		{
+			return x+y+z+w;
+		}
+	
+	==> MÉTODOS: ARGUMENTOS NOMEADOS <==
+	A chamada de um método requer argumentos, respeitando o posicionamento dos parâmetros na lista (já definidos dentro do método)
+	
+	Ex:
+		public static void Enviar (string destino, string titulo, string assunto)
+		{
+			Console.WriteLine($"{destino},{titulo},{assunto}");
+		}
+	
+	AO CHAMAR O MÉTODO, OS ARGUMENTOS SÃO NA MESMA ORDEM => destino, titulo, assunto
+	
+	Enviar("guibencici@gmail.com", "Contato", "Testando função Enviar")
+	
+	
+	***************** NOMEANDO OS ARGUMETNOS ***************
+	
+		Podemos usar qualquer ordem nos argumentos, desde que os indentifiquemos!
+		Para utilizarmos esta ação precisamos defini-los: nomeParametro : valor
+		
+		Ex: Enviar(assunto: "Testando função Enviar", titulo: "Contato", destino:"guibencici@gmail")
+		
+	==> MÉTODOS ESTÁTICOS <==
+	O modificador Static torna um item NÃO INSTANCIÁVEL
+	Se o modificador static for aplicado a uma variável, método ou propriedade da classe, esles poderão ser acessados sem a criação de um objeto da classe.
+	
+
+	==> MÉTODOS DE EXTENSÃO <==
+	Permite que seja adicionado uma nova funcionalidade a um tipo existente, sem precisar criar um novo tipo. Dessa forma, a funcionalidade
+	se comporta  como um outro membro do tipo.
+	
+	São definidos como estáticos, mas são chamados usando a sintaxe do método de instância.
+	O primeiro parâmetro especifica em que tipo o método opera e o parÂmetro é precedido pelo modificador THIS.
+	Estarão no escopo, somente quando for importado seu nameespace para o seu código-fonte com uma diretiva using.
+	
+	Ex:
+		public static class string MetodoExtensao
+		{
+			pubic static string CaixaAltaPrimeiraLetra(this string valor)
+			{
+				// lógica
+			}
+		}
+
+================================================================= // =============================================================================
+		
+															==== SOBRE MODELO DE DOMÍNIO ANÊMICO =====
+															
+==> É um modelo de domínio em que os objetos de domínio contêm "pouca ou nenhuma lógica", sendo representadados apenas como uma estrutura 
+de dados, sem comportamento.
+
+	Ex:
+		public class Conta
+		{
+			public string Titular {get; set;}
+			public string Nome {get; set;}
+			public double Saldo {get; set;}
+		}
+	
+	==> PARA EVITAR UM DOMÍNIO ANÊMICO:
+		1) Criação de um construtor parametrizado (Com validação)
+		
+		Ex:
+			public class Cliente
+			{
+				public Cliente (string nome, string email)
+				{
+					if(string.IsNullOrWhiteSpace(nome))
+					{
+						throw new ArgumenteException("O nome é obrigatório");
+					}
+					// demais validações
+					
+					Nome = nome;
+					Email = email;
+				}
+			}
+			
+		2) Definir as propriedades setter como private e adicionar lógica de validação
+		
+		Ex:
+			public class Cliente 
+			{
+				public Cliente (string nome, string email)
+				{....}
+				
+				//Propriedades
+				private string nome
+				public string Nome
+				{ get {return nome;}
+				
+				private set
+			
+					if(string.IsNullOrWhiteSpace(value))
+				{
+					throw new ArgumenteException("O nome é obrigatório");
+				}
+				titulo = value;
+			}
+			
+================================================================= // =============================================================================
+			
+															==== SOBRE HERANÇA =====
+
+==> É a capacidade de criar uma clase base com membros (campos, propriedades e métodos) que pode er usados em classes derivadas da classe base.
+	Desta forma, uma clsse filha/subClasse, acaba por herdar as propriedades e métodos da classe pai/superClasse. Podendo assim, 
+	estender ou modificar o comportamento da sua funcionalidade.
+	Modificadores de Acesso:
+		Publico: São herdados
+		Privates: não são herdados.
+		Protected: Acessível as classes derivadas.
+		Internal: São visiveis e acessíveis em classes derivadas localizadas no mesmo Assembly que a classe base.
+	
+	** IMPORTANTE **
+		==> O Construtor da classe base também é herdado! Desta forma, o construtor da classe derivada, sempre executa o construtor da classe base
+		antes de executar seu próprio código!
+		
+		==> Méotods herdados de uma clase Base podem ser sobrescritos!
+		Como?
+			Na Classe Base, o método precisa estar como "virtual".
+			Já na Classe Derivada, o método precisa estar como "override".
+			
+		==> Caso o método da classe filha possua a mesma assinatura de um método da classe mãe e não for definido como "Override", ele irá esconder 
+		o método da classe mãe!
+		
+	==> HERANÇA: CONSTRUTORES <==
+	
+	=> O construtor da classe base, sempre será executado primeiro. Entretanto, ele NÃO SERÁ HERDADO PELA FILHA, a qual precisará ter seu próprio construor.
+	
+	EX:
+		// CLASSE BASE!
+		
+		public class Veiculo
+		{
+			//CONSTRUTOR DA CLASSE BASE
+			public Veiculo()
+			{
+				Console.WriteLine("Inicializando o VEÍCULO!");
+			}
+		}
+		
+		// CLASSE DERIVADA!
+		
+		public classe Carro : Veiculo
+		{
+			// CONSTRUTOR DA CLASSE DERIVADA
+			public Carro ()
+			{
+				Console.WriteLine("Inicializando o CARRO!");
+			}
+		}
+		
+	==> HERANÇA: UPCASTING <==
+	
+	=>Converte um objeto de um tipo especializado (classe filha) para um tipo mais geral(classe base). Pode-se entender o upcasting com ATRIBUIÇÃO
+	de objeto de uma classe filha, para uma referência de uma classe base!
+	
+	** IMPORTANTE: O UPCASTING é sempre possível e de forma implícita!
+	
+		==> HERANÇA: DOWNCASTING <==
+	
+	=>Converte um objeto de um tipo geral(classe base) para um tipo mais especializado (classe filha) . Pode-se entender o downcasting com ATRIBUIÇÃO
+	de objeto de uma classe base, para uma referência de uma classe filha!
+	
+	** IMPORTANTE: O DOWNCASTING e nem sempre é sempre possível e de forma explícita!
+
+	==> HERANÇA: OPERADOR AS <==
+	
+	=> O operador "as" é usado para executar a conversão entre tipos de referência compatíveis ou tipos anuláveis.
+	   Retorna o objeto quando eles são compatíveis com o tipo espefcicado ou retorna null se a conversão não for possível em vez de gerar uma exceção.
+	   
+================================================================= // =============================================================================
+			
+															==== SOBRE UML =====
+			
+==> É uma linguagem de modelagem, designada para especificar, visualizar, construir e documentar um sistema.
+
+	=> DIAGRAMA:
+	
+		nome da classe ->      			Pessoa
+		
+		Atributos da Classe -> 			dataNascimento: DateTime
+										Nome: string 
+										Idade: int
+										
+		Métodos da classe ->			IdentificarPessoa()
+										Pessoa()
+										
+	
+	=> VISIBILIDADE:
+	
+	Privada -> o simbolo de menos ( - ), a visibilidade ocorre somento dentro da Classe.
+	Pública -> o simbolo de mais ( + ), a visibilidade pode ser obtidadde em qualquer Classe.
+	Protegida -> o simbolo de hash ( # ), a visibilidade é restrita as subclasses ou classes derivadas.
+	
+	
+															==> UML: HERANÇA <==
+	
+	=> Quando classes estão relacionadas exite uma ASSOCIAÇÃO.
+	   A herança é um tipo de relacionamento "é um", entre uma classe base e uma ou mais classes derivadas.
+	   
+	-> GENERALIZAÇÃO - Obtém similaridades entre classes e define novas classes. As classes genéricas são chamadas de Classes Pai.
+	
+	-> ESPECIALIZAÇÃO - Identifica atributos e métodos não correspondentes entre classes distintas ecolocando-os na classe filha (classes especializadas.
+	
+
+															==> UML: COMPOSIÇÃO <==
+
+	=> O relacionamento de COMPOSIÇÃO, ocorre quando um objete de uma classe é COMPOSTO de um ou mais objetos de outra classe.
+	
+	   A composição é um relacionamento do tipo: " TEM UM " 
+	   
+				Representa uma relação: Todo <==> Parte
+				
+		* O objeto todo(pai) é responsável por criar e destruir as suas partes
+		* A parte não existe sem o todo
+		* Um mesmo objeto-parte não podese associar a mais de um objeto-pai
+		
+		
+
+															==> UML: AGREGAÇÃO <==
+															
+	=> O relacionamento de AGREGAÇÃO, é um tipo especial de composição. Onde objetos de uma classe podem conter um ou mais objetos de outra classe!
+
+	   A AGREGAÇÃO é um relacionamento do tipo: " TEM UM " 
+	   
+				Representa uma relação: Todo <==> Parte
+				
+		* A parte e o todo são independentes
+		* A parte pode existir sem o todo
+		* Cada objeto possui seu próprio ciclo de vida
+		* A agregação é um relacionamento mais fraco que a composição
+		
+		
+================================================================= // =============================================================================
+			
+															==== SOBRE ACOPLAMENTO =====
+			
+==> É a medida de quão interconectados estão os componentes de um sistema.
+	É o nível de dependência e de conhecimento que pode existir entre os componentes de um sistema.
+
+
+															==> ACOPLAMENTO: FORTE <==
+
+==> Os componentes são interconectados de uma forma tão dependente que é praticamente impossível alterar um deles sem causar efeitos colaterais
+em todo ou em grande parte do sistema.
+	As Classes e os Objetos são dependentes um do outro, assim, reduzem a reutilização de código.
+	Uma Classe com acoplamento forte, depende de muitas outras Classes para fazer o seu serviço.
+	Uma Classe com acoplamento forte, é mais difícil de manter, de entender e de ser reusada.
+	
+
+															==> ACOPLAMENTO: FRACO <==
+
+==> Os componentes de um sistema são interconectados de mod que um dependa do outro o MÍNIMO POSSÍVEL.
+	Uma Classe com acoplamento FRACO não é dependente de muitas Classes para fazer o que ela tem que fazer.
+	Uma Classe com acoplamento FRACO é mais fácil de manter, de entender e de ser reusada.
+	
+	** VANTAGENS DE UTILIZAR O ACOPLAMENTO FRACO **
+	
+	-> Um módulo não quebra outros módulos
+	-> Melhora a testabilidade do sistema
+	-> O código é mais fácil de manter
+	-> Fica menos afetado por alterações em outros componentes
+	
+	
+================================================================= // =============================================================================
+
+
+														==== SOBRE INTERFACES =====
+
+==> Uma Interface, é um tipo de Classe, que contém apenas as assinaturas de métodos, propriedades, eventos e indexadores.
+	
+	
+	-> Todos os Membros de uma interface, são publicos e abstratos.
+	-> Uma Interface funciona como um contrato entre si e qualquer Classe que a implementa.
+	-> Uma Classe que herdad uma Interface, é obrigada a implementar todos os seus membros.
+	-> Não contém um construtor.
+	-> Uma Classe pode implementar varias Interfaces
+	
+	*** Uma Interface não contém uma implementação, contém apenas definições de métodos, propriedades, eventos e indexadores. Expondo funcionalidades
+		 que uma classe que qusier usar terá que implementar.
+		 
+	Ex:
+		interface IControle
+		{
+			void Desenhar();
+		}
+		
+	** VANTAGENS **
+		
+		-> Usar Interface é uma forma de criar e definir um contrato que ajuda na organização do código.
+		-> Permitem criar sistemas fracamento acoplados e mais flexível a mudanças.
+		-> Programar para Interfafce deixa o código mais flexícel, permitindo trocar a implementação de um componente em tempo de execução.
+		
+		
+								
+																==> INTERFACE: DESACOPLAMENTO <==
+																
+==> Interfaces são apenas contratos do que o objeto tem ou é capaz de fazer.
+
+	-> Manutibilidade: Alterações ficam mais isoladas, não precisa mudar tudo que aceitava uma classe concreta para aceitar outra necessária.
+	-> Extensibilidade: Permite uqe novas implementações sejam feitas sem alterar tudo que esperava determinado objeto. Assim, certos comportamentos se tornam mais
+		genéricos, podeendo manipular objetos que ele desconhece desde que contenha o contrato esperado.
+	-> Testabilidade: É fácil substituir um objeto real de produção por um falso que facilite o teste.
+	
+	
+================================================================= // =============================================================================
+
+
+														==== SOBRE CLASSES ABSTRATAS X INTERFACES =====
+
+==> CLASSES ABSTRATAS <==
+
+	-> Criadas e identificadas pelo modificador ABSTRACT.
+	-> Podem conter métodos comuns e métodos/propriedades abstratos(modificador abstract)
+	-> Não podem ser instanciadas.
+	-> Podem ser herdadas ( quem herda tem que implementar os métodos/propriedades abstratos ).
+	-> Podem ter Construtor.
+	
+	* Um classe pode herder somente de uma classe.
+	* Uma classe abstrata, pode conter implementação de código, métodos e propriedades (abstratos) que não possuem implementação.
+	* Uma classe de terceiros, precisa ser reescrita para estender somente a partir da classe abstrata.
+	* Executam mais rapidamente.
+	* Se for incluido um novo método em uma classe abstrata, é dada a opção de fornecer uma implementação padrão para ele.
+	
+==> INTERFACES <==
+	
+	-> Criadas e identificadas pelo modificador INTERFACE.
+	-> Estabelecem um contrato com quem for implementar a interface.
+	-> Podem conter somente métodos/propriedades que não tenham implementação.
+	-> Não podem ser instanciadas.
+	-> Podem ser herdadas ( quem herda tem que implementar o contrato definido.
+	-> Não possuem Construtor.
+	
+	* Uma classe pode implementar diversas interfaces.
+	* Uma interface não pode conter qualquer tipo de implementação, muito menos código padrão.
+	* Uma implementação de uma interface pode ser incluída a qualquer classe de terceiros.
+	* A execução é morosa, pois requer trabalho exxtra para encontrar o método correspondente na classe atual.
+	* Se for incluido um novo método em uma interface, é preciso ajustar todas as implementações da interface.
+	
+
+================================================================= // =============================================================================
+
+
+														==== SOBRE POLIMORFISMO =====
+
+==> É o princípio pelo qual duas ou mais classes derivadas de uma mesma superclase podem invocar métodos que têm a mesma assinatura, mas comportamentos distintos,
+que são especializados para cada classe derivada, usando para tanto uma referência a um objeto do tipo da superClasse.
+
+	1) Polimorfimoso em tempo de execução (Overriding / Sobrescrita)
+		-> Usa herança e métodos virtuais
+		-> Sobrescreve métodos virtuais alterando comportamento da classe derivada
+	
+	2) Polimorfimoso em tempo de compilação (Overloading / Sobrecarga)
+		-> Utiliza sobrecarga de métodos e operadores
+		-> Realiza a tarefa com distintos parâmetros de entrada
+		
+		
+	** 	POLIMORFISMO COM HERANÇA **
+		-> Classes derivadas sobrescrevendo os membros da classe.
+		
+	** POLIMORFISMO COM INTERFACE **
+		-> Classes que implementam a interface com comportamento diferente
+		-> Métodos com mesmo nome nas classes, mas funcionalidades diferentes
+		
+	** POLIMORFISMO COM CLASSE ABSTRATA **
+		-> As classes derivadas incluem detalhes de implmentação nos métodos abstratos
+		
+		
+
+================================================================= // =============================================================================
+
+
+												==== SOBRE DEFAULT MEMBER INTERFACES =====
+
+==> Permite adicionar membros as interfaces e fornecer uma implementação padrão para esses membros.
+	Adicionar um novo método padrão a uma interface existente, sem quebrar o código das classes que implementam essa interface.
+	
+	
+================================================================= // =============================================================================
+
+
+												==== SOBRE SOLID =====
+
+==> S.R.P ( Single Responsability Principle) <==
+
+	=> "Cada classe deve ter apenas um motivo para mudar. Apenas uma responsabilidade a ser cumprida"
+	
+		Ou seja, 
+			-> Única responsabilidade.
+			-> Classes Menores.
+			-> Fáceis de manter.
+			-> Mais prático para se estender.
+			-> Prático para testar.
+			
+
+==> O.C.P ( Open Closed Principle ) <==
+
+	=> "Você deve ser capaz de estender um comportamento de uma classesem a necessidade de altera-lo"
+		
+		-> METHODS
+		** Pode-se usaros métodos de extensão para incluir novas funcionalidades sem alterar o código da classe **
+		
+		-> CLASS 
+		** Classes deverão ser abertas para extensão, mas fechadas para alteração **
+		
+		IMPLEMENTANDO:
+			Adicionar as novas funcionalidades criando novas classes derivadas que devem ser herdadas da classe base original.
+			
+
+==> L.S.P ( Liskov Substituition Principle )
+	
+	=> "Uma classe base, deve poder ser substituida pela sua classe derivada sem alteração no comportamento final"
+	
+		"A instância de uma classe base deve permitir a sua substituição por instâncias de classes derivadas sem que necessite
+		realizar qualquer alteração no código!"
+		
+		"Uma classe derivada, deve poder sobrescrever os métodos da classe base de forma que a funcionalidadedo ponto de vista do cliente
+		continue a mesma (sem haver quebra no código)"
+		
+		** O L.S.P. fornece uma forma de saber se a herança está implementando de forma correta **
+		
+			-> A Classe base possui comportamentos inúteis para a classe deriada.
+			->  O comportamento externo é alterado se substituirmos a instância da classe base pela instância da classe derivada
+			
+==> I.S.P ( Iterface Segregation Principle )
+
+	=> "Muitas interfaces específicas são melhores do que uma interface geral"
+	   " Uma interface não deve forçar uma classe a implementar funcionalidades que ela não irá utilizar"
+	   
+	   ** OBJETIVOS ** 
+			-> Reduzir os efeitos colaterais e a frequência das alterações necessárias, dividindo o software em várias partes independentes.
+			-> Obter um baixo acoplamento.
+			-> Ter interfaces focadas em sua responsabilidade(SRP).
+			-> Reduzir as dependências no código.
+			
+==> D.I.P ( Dependency Inversion Principle )
+	
+	=> " Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de uma abstração "
+		
+==> D.R.Y. ( Dont Repeat Yourself ) <==
+	
+	=> "Cada parte do conhecimento deve ter uma representação única, inequívoca e definitiva dentro de um sistema"
+	
+		Ou seja,
+			-> Uma funcionalidade precisa do domínio de negócios de seu aplicativo.
+			-> Um algoritmo.
+			
